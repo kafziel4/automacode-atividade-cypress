@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 2,
-    "start": "2020-12-22T02:02:12.487Z",
-    "end": "2020-12-22T02:02:48.490Z",
-    "duration": 36003,
+    "start": "2020-12-22T02:47:04.836Z",
+    "end": "2020-12-22T02:47:39.420Z",
+    "duration": 34584,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e0b0721f-c63c-42bd-b3d3-dd7a196e6062",
+      "uuid": "d0f19630-7543-4c5d-a5e5-45669cd5db55",
       "title": "",
       "fullFile": "cypress/integration/cadastro.feature",
       "file": "cypress/integration/cadastro.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "dc6b591e-10d3-43cd-9640-94f304eabaad",
+          "uuid": "233e79b5-7d45-4087-b88f-95768e1e5f06",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Realizar o cadastro",
               "fullTitle": "Cadastro Realizar o cadastro",
               "timedOut": null,
-              "duration": 15354,
+              "duration": 12937,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'WebTable.html'\n    at cadastroPage.validarCadastro (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:206:16)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:269:16)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21693:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21034:35)",
                 "diff": null
               },
-              "uuid": "74f9aa23-7f7b-4823-8040-4ab1cdc99312",
-              "parentUUID": "dc6b591e-10d3-43cd-9640-94f304eabaad",
+              "uuid": "8a860e5a-7684-4b2a-9e6c-9b48ceb4d650",
+              "parentUUID": "233e79b5-7d45-4087-b88f-95768e1e5f06",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "Preencher campos incorretamente",
               "fullTitle": "Cadastro Preencher campos incorretamente",
               "timedOut": null,
-              "duration": 20464,
+              "duration": 21499,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -73,8 +73,8 @@
                 "estack": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'Registr.html'\n    at cadastroPage.validarRefresh (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:238:16)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:275:16)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21693:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21034:35)",
                 "diff": null
               },
-              "uuid": "b09e81ea-500a-4ade-83a8-01ab153e2337",
-              "parentUUID": "dc6b591e-10d3-43cd-9640-94f304eabaad",
+              "uuid": "547dd522-332e-4647-9c07-d4e8fa20ec86",
+              "parentUUID": "233e79b5-7d45-4087-b88f-95768e1e5f06",
               "isHook": false,
               "skipped": false
             }
@@ -82,12 +82,12 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "74f9aa23-7f7b-4823-8040-4ab1cdc99312",
-            "b09e81ea-500a-4ade-83a8-01ab153e2337"
+            "8a860e5a-7684-4b2a-9e6c-9b48ceb4d650",
+            "547dd522-332e-4647-9c07-d4e8fa20ec86"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 35818,
+          "duration": 34436,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -109,9 +109,9 @@
     },
     "mochawesome": {
       "options": {
-        "quiet": false,
+        "quiet": true,
         "reportFilename": "mochawesome",
-        "saveHtml": true,
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -121,7 +121,12 @@
     },
     "marge": {
       "options": {
-        "overwrite": false
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
       },
       "version": "5.1.0"
     }
