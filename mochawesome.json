@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 2,
-    "start": "2020-12-22T02:47:04.836Z",
-    "end": "2020-12-22T02:47:39.420Z",
-    "duration": 34584,
+    "start": "2020-12-22T02:50:39.659Z",
+    "end": "2020-12-22T02:51:19.169Z",
+    "duration": 39510,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d0f19630-7543-4c5d-a5e5-45669cd5db55",
+      "uuid": "a5adce47-bbec-4cd1-a64b-e64f77d1e540",
       "title": "",
       "fullFile": "cypress/integration/cadastro.feature",
       "file": "cypress/integration/cadastro.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "233e79b5-7d45-4087-b88f-95768e1e5f06",
+          "uuid": "42b62768-8e04-4b94-a373-a5eaaf91f609",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Realizar o cadastro",
               "fullTitle": "Cadastro Realizar o cadastro",
               "timedOut": null,
-              "duration": 12937,
+              "duration": 16615,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'WebTable.html'\n    at cadastroPage.validarCadastro (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:206:16)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:269:16)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21693:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21034:35)",
                 "diff": null
               },
-              "uuid": "8a860e5a-7684-4b2a-9e6c-9b48ceb4d650",
-              "parentUUID": "233e79b5-7d45-4087-b88f-95768e1e5f06",
+              "uuid": "4daa457e-6257-44d2-97b1-ccdff4b14b41",
+              "parentUUID": "42b62768-8e04-4b94-a373-a5eaaf91f609",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "Preencher campos incorretamente",
               "fullTitle": "Cadastro Preencher campos incorretamente",
               "timedOut": null,
-              "duration": 21499,
+              "duration": 22641,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -73,8 +73,8 @@
                 "estack": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'Registr.html'\n    at cadastroPage.validarRefresh (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:238:16)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:275:16)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21693:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21034:35)",
                 "diff": null
               },
-              "uuid": "547dd522-332e-4647-9c07-d4e8fa20ec86",
-              "parentUUID": "233e79b5-7d45-4087-b88f-95768e1e5f06",
+              "uuid": "ce09f07a-64fb-42f8-be07-3c572f491b84",
+              "parentUUID": "42b62768-8e04-4b94-a373-a5eaaf91f609",
               "isHook": false,
               "skipped": false
             }
@@ -82,12 +82,12 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "8a860e5a-7684-4b2a-9e6c-9b48ceb4d650",
-            "547dd522-332e-4647-9c07-d4e8fa20ec86"
+            "4daa457e-6257-44d2-97b1-ccdff4b14b41",
+            "ce09f07a-64fb-42f8-be07-3c572f491b84"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 34436,
+          "duration": 39256,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
