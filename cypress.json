@@ -6,6 +6,8 @@
     "video": true,
     "videoUploadOnPasses":true,
     "videoCompression":32,
-    "reporter": "mochawesome",
-    "reporterOptions": { "overwrite": false }
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporter-config.json"
+    }
 }
