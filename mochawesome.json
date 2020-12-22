@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 2,
-    "start": "2020-12-22T02:54:40.790Z",
-    "end": "2020-12-22T02:55:12.730Z",
-    "duration": 31940,
+    "start": "2020-12-22T02:58:19.917Z",
+    "end": "2020-12-22T02:58:58.349Z",
+    "duration": 38432,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "785a4570-dc3d-49e3-aec9-d7c22e417a13",
+      "uuid": "88084c1b-8382-4e68-a247-3f48078323a3",
       "title": "",
       "fullFile": "cypress/integration/cadastro.feature",
       "file": "cypress/integration/cadastro.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "17b99ad0-8896-4621-b75a-e6dcd5a11a03",
+          "uuid": "506a7ed9-d8f6-4e0b-9b34-da9d15e5ec62",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Realizar o cadastro",
               "fullTitle": "Cadastro Realizar o cadastro",
               "timedOut": null,
-              "duration": 11817,
+              "duration": 16186,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {
-                "message": "SecurityError: Blocked a frame with origin \"http://demo.automationtesting.in\" from accessing a cross-origin frame.",
-                "estack": "SecurityError: Blocked a frame with origin \"http://demo.automationtesting.in\" from accessing a cross-origin frame.\nError: Blocked a frame with origin \"http://demo.automationtesting.in\" from accessing a cross-origin frame.\n    at http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:159126:16\n    at PassThroughHandlerContext.finallyHandler (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:7138:23)\n    at PassThroughHandlerContext.tryCatcher (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:10584:23)\n    at Promise._settlePromiseFromHandler (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8519:31)\n    at Promise._settlePromise (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8576:18)\n    at Promise._settlePromise0 (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8621:10)\n    at Promise._settlePromises (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:8697:18)\n    at _drainQueueStep (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:5291:12)\n    at _drainQueue (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:5284:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:5300:5)\n    at Async.drainQueues (http://demo.automationtesting.in/__cypress/runner/cypress_runner.js:5170:14)",
+                "message": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'WebTable.html'",
+                "estack": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'WebTable.html'\n    at cadastroPage.validarCadastro (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:206:16)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:269:16)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21693:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21034:35)",
                 "diff": null
               },
-              "uuid": "03200272-cead-4bb4-87d4-ad6818a5bf51",
-              "parentUUID": "17b99ad0-8896-4621-b75a-e6dcd5a11a03",
+              "uuid": "ad92c80f-f631-488e-8883-ce4e05907ab3",
+              "parentUUID": "506a7ed9-d8f6-4e0b-9b34-da9d15e5ec62",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "Preencher campos incorretamente",
               "fullTitle": "Cadastro Preencher campos incorretamente",
               "timedOut": null,
-              "duration": 19992,
+              "duration": 22056,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -73,8 +73,8 @@
                 "estack": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'Registr.html'\n    at cadastroPage.validarRefresh (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:238:16)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:275:16)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21693:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21034:35)",
                 "diff": null
               },
-              "uuid": "e9cb2cf9-7e26-4f8d-b0c4-2506fa3353a1",
-              "parentUUID": "17b99ad0-8896-4621-b75a-e6dcd5a11a03",
+              "uuid": "15d51a32-c252-49e3-91fb-78bd1a643d68",
+              "parentUUID": "506a7ed9-d8f6-4e0b-9b34-da9d15e5ec62",
               "isHook": false,
               "skipped": false
             }
@@ -82,12 +82,12 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "03200272-cead-4bb4-87d4-ad6818a5bf51",
-            "e9cb2cf9-7e26-4f8d-b0c4-2506fa3353a1"
+            "ad92c80f-f631-488e-8883-ce4e05907ab3",
+            "15d51a32-c252-49e3-91fb-78bd1a643d68"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 31809,
+          "duration": 38242,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
