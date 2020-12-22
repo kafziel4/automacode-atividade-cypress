@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-12-22T01:58:40.550Z",
+    "end": "2020-12-22T01:59:15.441Z",
+    "duration": 34891,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ca22f08c-e783-46b0-8057-a449c7bfeec2",
+      "title": "",
+      "fullFile": "cypress/integration/cadastro.feature",
+      "file": "cypress/integration/cadastro.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aa0be316-bb82-4723-a4ed-38721b447a7f",
+          "title": "Cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar o cadastro",
+              "fullTitle": "Cadastro Realizar o cadastro",
+              "timedOut": null,
+              "duration": 13753,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'WebTable.html'",
+                "estack": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'WebTable.html'\n    at cadastroPage.validarCadastro (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:206:16)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:269:16)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21693:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21034:35)",
+                "diff": null
+              },
+              "uuid": "b91b1d75-6290-4cd7-9704-5a8b2d5dd514",
+              "parentUUID": "aa0be316-bb82-4723-a4ed-38721b447a7f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Preencher campos incorretamente",
+              "fullTitle": "Cadastro Preencher campos incorretamente",
+              "timedOut": null,
+              "duration": 20973,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'Registr.html'",
+                "estack": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'Registr.html'\n    at cadastroPage.validarRefresh (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:238:16)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:275:16)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21693:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21034:35)",
+                "diff": null
+              },
+              "uuid": "38d5b836-85e1-4640-b4fd-3784090005ed",
+              "parentUUID": "aa0be316-bb82-4723-a4ed-38721b447a7f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b91b1d75-6290-4cd7-9704-5a8b2d5dd514",
+            "38d5b836-85e1-4640-b4fd-3784090005ed"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 34726,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}
