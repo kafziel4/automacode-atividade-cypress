@@ -9,5 +9,7 @@
     "reporter": "cypress-multi-reporters",
     "reporterOptions": {
         "configFile": "reporter-config.json"
-    }
+    },
+    "screenshotsFolder": "mochawesome-report/assets",
+    "videosFolder": "mochawesome-report/videos"
 }
