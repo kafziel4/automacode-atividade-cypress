@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 2,
-    "start": "2020-12-24T22:47:24.434Z",
-    "end": "2020-12-24T22:47:57.988Z",
-    "duration": 33554,
+    "start": "2020-12-25T02:27:48.452Z",
+    "end": "2020-12-25T02:28:18.890Z",
+    "duration": 30438,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f27713af-4da6-4341-947a-b1ad0f11d9c5",
+      "uuid": "08d01a1e-6522-4644-86e3-e3d2bdda0c8a",
       "title": "",
       "fullFile": "cypress/integration/cadastro.feature",
       "file": "cypress/integration/cadastro.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9fcf8307-3ea6-4c00-8e46-bf28531b4924",
+          "uuid": "850fa8e4-7ab8-48a8-9890-329d1142e770",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Realizar o cadastro",
               "fullTitle": "Cadastro Realizar o cadastro",
               "timedOut": null,
-              "duration": 13468,
+              "duration": 10967,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": "[\n  \"assets/cadastro.feature/Cadastro -- Realizar o cadastro (failed).png\",\n  \"videos/cadastro.feature.mp4\"\n]",
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {
-                "message": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'WebTable.html'",
-                "estack": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'WebTable.html'\n    at cadastroPage.validarCadastro (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:206:16)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:269:16)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21693:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21034:35)",
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Portuguese' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Portuguese' but never did.\n    at cadastroPage.preencherCadastro (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:180:10)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:263:16)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21693:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21034:35)",
                 "diff": null
               },
-              "uuid": "19d076af-083e-493c-82d8-a033013f848f",
-              "parentUUID": "9fcf8307-3ea6-4c00-8e46-bf28531b4924",
+              "uuid": "b28fef43-d506-4e70-84e8-49fb08a03baa",
+              "parentUUID": "850fa8e4-7ab8-48a8-9890-329d1142e770",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "Preencher campos incorretamente",
               "fullTitle": "Cadastro Preencher campos incorretamente",
               "timedOut": null,
-              "duration": 19851,
+              "duration": 19302,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -73,8 +73,8 @@
                 "estack": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'Registr.html'\n    at cadastroPage.validarRefresh (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:238:16)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:275:16)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21693:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21034:35)",
                 "diff": null
               },
-              "uuid": "dc79cc93-1caa-4546-ad0a-9de12b20417f",
-              "parentUUID": "9fcf8307-3ea6-4c00-8e46-bf28531b4924",
+              "uuid": "06787752-7de3-4c8d-9ea2-8a8734e782e6",
+              "parentUUID": "850fa8e4-7ab8-48a8-9890-329d1142e770",
               "isHook": false,
               "skipped": false
             }
@@ -82,12 +82,12 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "19d076af-083e-493c-82d8-a033013f848f",
-            "dc79cc93-1caa-4546-ad0a-9de12b20417f"
+            "b28fef43-d506-4e70-84e8-49fb08a03baa",
+            "06787752-7de3-4c8d-9ea2-8a8734e782e6"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 33319,
+          "duration": 30269,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
