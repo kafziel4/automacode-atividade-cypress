@@ -41,7 +41,7 @@ class cadastroPage {
             cy.get(cadastroelements.hockey()).check().should('be.checked')
         }
 
-        cy.get(cadastroelements.idiomas()).click()
+        cy.get(cadastroelements.idiomas()).click({force: true})
         cy.contains(cadastro.idiomas).click()
         cy.get(cadastroelements.idiomas()).children('.ui-autocomplete-multiselect-item').should('contain.text', cadastro.idiomas)
 
