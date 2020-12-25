@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2020-12-25T02:30:44.959Z",
-    "end": "2020-12-25T02:31:17.870Z",
-    "duration": 32911,
+    "start": "2020-12-25T02:33:17.470Z",
+    "end": "2020-12-25T02:33:49.991Z",
+    "duration": 32521,
     "testsRegistered": 2,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2bf62c34-9403-439e-9e2f-f9004c6593da",
+      "uuid": "a07c754a-87eb-4828-9f82-70e50616c288",
       "title": "",
       "fullFile": "cypress/integration/cadastro.feature",
       "file": "cypress/integration/cadastro.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e34df583-512b-447c-be74-6b97db5b5488",
+          "uuid": "8308710c-db7c-45aa-be1c-c11d76e72917",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Realizar o cadastro",
               "fullTitle": "Cadastro Realizar o cadastro",
               "timedOut": null,
-              "duration": 14431,
+              "duration": 14219,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "3325a89b-f27e-40e6-af82-a790df84d3b4",
-              "parentUUID": "e34df583-512b-447c-be74-6b97db5b5488",
+              "uuid": "7956c77c-c921-418b-97eb-16824d459d48",
+              "parentUUID": "8308710c-db7c-45aa-be1c-c11d76e72917",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Preencher campos incorretamente",
               "fullTitle": "Cadastro Preencher campos incorretamente",
               "timedOut": null,
-              "duration": 18228,
+              "duration": 18100,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,22 +69,22 @@
                 "estack": "AssertionError: Timed out retrying: expected 'http://demo.automationtesting.in/Register.html' to include 'Registr.html'\n    at cadastroPage.validarRefresh (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:238:16)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:275:16)\n    at Context.resolveAndRunStepDefinition (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21693:9)\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/cadastro.feature:21034:35)",
                 "diff": null
               },
-              "uuid": "70b5ab5b-9c98-47d5-916d-edb9466bef17",
-              "parentUUID": "e34df583-512b-447c-be74-6b97db5b5488",
+              "uuid": "3eed27cf-4c55-4658-bde6-a23393b7102a",
+              "parentUUID": "8308710c-db7c-45aa-be1c-c11d76e72917",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3325a89b-f27e-40e6-af82-a790df84d3b4"
+            "7956c77c-c921-418b-97eb-16824d459d48"
           ],
           "failures": [
-            "70b5ab5b-9c98-47d5-916d-edb9466bef17"
+            "3eed27cf-4c55-4658-bde6-a23393b7102a"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 32659,
+          "duration": 32319,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
