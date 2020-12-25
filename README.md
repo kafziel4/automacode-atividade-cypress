@@ -3,7 +3,7 @@ Projeto de automação do site <a href="http://demo.automationtesting.in/Registe
 
 Requisitos:
 - Criar a arquitetura do zero
-- Criar dois cenários, um PASSED e um FAILED
+- Criar dois cenários, um PASSED e um FAILED (falha proposital)
 - Tirar um screenshot a cada step
 - Gravar vídeo
 - Gerar relatório dinâmico (Mochawesome)
